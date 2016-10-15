@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -27,7 +30,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText" />
+        android:id="@+id/editnama" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,7 +41,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText2" />
+        android:id="@+id/editalamat" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -88,13 +91,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nama Sekolah"
+        android:text="Nama Sekolah Asal"
         android:id="@+id/namasekolah" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText3" />
+        android:id="@+id/editsekolahasal" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -114,4 +117,46 @@
         android:text="Submit"
         android:id="@+id/buttonSubmit" />
 
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:text="Hasil"
+        android:id="@+id/textViewHasil1"
+        android:layout_weight="1" />
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:text="Hasil"
+        android:id="@+id/textViewHasil2"
+        android:layout_weight="1" />
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:text="Hasil"
+        android:id="@+id/textViewHasil3"
+        android:layout_weight="1" />
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:text="Hasil"
+        android:id="@+id/textViewHasil4"
+        android:layout_weight="1" />
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:text="Hasil"
+        android:id="@+id/textViewHasil5"
+        android:layout_weight="1" />
 </LinearLayout>
+</ScrollView>
