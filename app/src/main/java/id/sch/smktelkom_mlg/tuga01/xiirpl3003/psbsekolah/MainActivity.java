@@ -29,11 +29,15 @@ public class MainActivity extends AppCompatActivity {
         rbP = (RadioButton) findViewById(R.id.perempuan);
         cbsmp = (CheckBox) findViewById(R.id.smp);
         cbmts = (CheckBox) findViewById(R.id.mts);
+        etAsalSekolah = (EditText) findViewById(R.id.editsekolahasal);
+        spJalur = (Spinner) findViewById(R.id.spinner);
 
         tvHasil1 = (TextView) findViewById(R.id.textViewHasil1);
         tvHasil2 = (TextView) findViewById(R.id.textViewHasil2);
         tvHasil3 = (TextView) findViewById(R.id.textViewHasil3);
         tvHasil4 = (TextView) findViewById(R.id.textViewHasil4);
+        tvHasil5 = (TextView) findViewById(R.id.textViewHasil5);
+
 
         findViewById(R.id.buttonSubmit).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +74,12 @@ public class MainActivity extends AppCompatActivity {
 
         if(hasill.length()==startlen) hasill+="Tidak ada pada Pilihan";
         tvHasil3.setText(hasill);
+
+        String asal = etAsalSekolah.getText().toString();
+        tvHasil4.setText("Nama Asal Sekolah"+asal );
+
+        tvHasil5.setText("Jalur yang Dipilih "+ spJalur.getSelectedItem().toString());
+
 
     }
 
